@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>WDD330 - W03 Exercise03</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="../../css/style.css">
+</head>
+
+<body onload="dynamicTableLoader()">
+
+  <div class="navbar">
+    <a href="../../index.html">Welcome</a>
+    <a href="../../portfolio.html">My Portfolio</a>
+    <a href="../../contact.html" class="right">Contact</a>
+  </div>
+
+  <div class="header">
+    <h1>WDD 330 - Web Frontend Development II</h1>
+    <h4>My Portfolio</h4>
+  </div>
+
+  <div class="row">
+
+    <div class="row">
+
+
+      <div class="main">
+        <h2>WEEK 11 - SUBMISSION</h2>
+
+        <button class="accordion">Reading notes</button>
+        <div class="panel">
+
+          <h3>Working on my project</h3>
+
+          <ul>
+            <li>
+			
+			</li>
+          </ul>
+
+        </div>
+
+        <button class="accordion">Weekly Report</button>
+        <div class="panel">
+          <p>
+            <b>What did I do since the last meeting?</b>
+            <br>
+            Finalizing my second's propject's design.
+          </p>
+
+          <p>
+            <b>What am I going to do next?</b>
+            <br>
+            Start with my coming project coding as soon as possible.  
+          </p>
+
+          <p>
+            <b>What are my blockers?</b>
+            <br>
+			Time is main blocker of the week. My workload has been increased with the new project we received.
+          </p>
+
+        </div>
+
+        <button class="accordion">Exercises</button>
+        <div class="panel">
+          <p>
+            <a href="exercises/index.html">Money Transfer Project</a>
+          </p> 
+        </div>
+
+        <button class="accordion">Questions</button>
+        <div class="panel">
+          <ol> 
+            <li>Local Storage vs RDBMS</li>
+          </ol>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <div class="copyright">
+    <p>©<script>
+        document.write(new Date().getFullYear());
+      </script>
+      Fabrice T. Banyingela. All Rights Reserved. |
+      <a href="../../portfolio.html" style="color: white; text-decoration: none;">My Portfolio</a></p>
+  </div>
+
+  <!-- Link to the course links-->
+  <script>
+    var acc = document.getElementsByClassName("accordion");
+    var i;
+
+    for (i = 0; i < acc.length; i++) {
+      acc[i].addEventListener("click", function () {
+        this.classList.toggle("active");
+        var panel = this.nextElementSibling;
+        if (panel.style.maxHeight) {
+          panel.style.maxHeight = null;
+        } else {
+          panel.style.maxHeight = panel.scrollHeight + "px";
+        }
+      });
+    }
+  </script>
+</body>
+
+</html>

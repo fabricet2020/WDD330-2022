@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>WDD330 - Portfolio</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="../../../css/style.css">
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<body>
+
+    <div class="navbar">
+        <a href="../../../index.html">Welcome</a>
+        <a href="../../../../portfolio.html">My Portfolio</a>
+        <a href="../../../contact.html" class="right">Contact</a>
+    </div>
+
+    <div class="header">
+        <h1>WDD 330 - Web Frontend Development II</h1>
+        <h4>My Portfolio</h4>
+    </div>
+
+    <div class="row">
+        <div class="side">
+            <h2>BYU-Idaho Student</h2>
+            <img class="myimage" src="../../../images/background.jpg" alt="Fabrice Image One">
+
+            <h4>Fabrice Tshiyoyi Banyingela</h4>
+            <p>Bachelor of Science Applied Technology <br>BYU Idaho class of 2022</p>
+        </div>
+
+        <div class="main">
+
+            <h1>Client-side Validation</h1>
+
+            <div class="container">
+                <form action="javascript:;" id="form1">
+                    <label for="fname">First Name</label>
+                    <input type="text" id="fname" name="fname" maxlength="20" placeholder="Your name..">
+                    <span class="error"></span>
+
+                    <br>
+                    <label for="lname">Last Name</label>
+                    <input type="text" id="lname" name="lname" maxlength="20" placeholder="Your last name..">
+                    <span class="error"></span>
+
+                    <br>
+                    <label for="country">Country</label>
+                    <select id="country" name="country">
+                        <option value="">Select..</option>
+                        <option value="australia">Australia</option>
+                        <option value="canada">Canada</option>
+                        <option value="india">India</option>
+                        <option value="japan">Japan</option>
+                        <option value="pakistan">Pakistan</option>
+                        <option value="usa">USA</option>
+                    </select>
+                    <span class="error"></span>
+                    
+                    <br>
+                    <label for="subject">Subject</label>
+                    <textarea id="subject" name="subject" placeholder="Write something.."
+                        style="height:200px"></textarea>
+                    <span class="error"></span>
+
+                    <input type="submit" onclick="fnSubmitForm()" value="Submit">
+
+                </form>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="copyright">
+        <p>©<script>
+                document.write(new Date().getFullYear());
+            </script>
+            Fabrice T. Banyingela. All Rights Reserved. |
+            <a href="../../../portfolio.html" style="color: white; text-decoration: none;">My Portfolio</a></p>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

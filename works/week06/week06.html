@@ -1,0 +1,143 @@
+     <!DOCTYPE html>
+     <html lang="en">
+
+     <head>
+       <title>WDD330 - W04 Exercise04</title>
+       <meta charset="UTF-8">
+       <meta name="viewport" content="width=device-width, initial-scale=1">
+       <link rel="stylesheet" type="text/css" href="../../css/style.css">
+     </head>
+
+     <body onload="dynamicTableLoader()">
+
+       <div class="navbar">
+         <a href="../../index.html">Welcome</a>
+         <a href="../../portfolio.html">My Portfolio</a>
+         <a href="../../contact.html" class="right">Contact</a>
+       </div>
+
+       <div class="header">
+         <h1>WDD 330 - Web Frontend Development II</h1>
+         <h4>My Portfolio</h4>
+       </div>
+
+       <div class="row">
+
+         <div class="row">
+
+
+           <div class="main">
+             <h2>WEEK 06 - SUBMISSION</h2>
+
+             <button class="accordion">Reading notes</button>
+             <div class="panel">
+
+               <h3>Chapter 10: Testing and Debugging</h3>
+               <p>This week was a continuation of my week 5's reading. I have recapped on the following</p>
+               <p>Summary</p>
+               <p>3 types of errors:
+               </p>
+
+               <ul>
+                 <li>System error</li>
+                 <li>Programmer error</li>
+                 <li>User error</li>
+               </ul>
+
+               <p>I also deepen my understanding of:</p>
+               <ul>
+                 <li>Exceptions</li>
+                 <li>Stack Traces</li>
+                 <li>Warnings</li>
+               </ul>
+
+               <p>Red-Green-Refactor:</p>
+               <ol>
+                 <li>Write tests (that initially fail)</li>
+                 <li>Write code to pass the tests</li>
+                 <li>Refactor the code</li>
+                 <li>Test refactored code</li>
+                 <li>Write more tests for new features</li>
+                 <br>
+               </ol>
+
+               <li>Testing Frameworks: They provide methods that make creating tests easier.</li>
+               <li>Jest is a testing framework developed by Facebook tp do such things.</li>
+
+             </div>
+
+             <button class="accordion">Weekly Report</button>
+
+             <div class="panel">
+               <p>
+                 <b>What did I do since the last meeting?</b>
+                 <br>
+                I have worked more on the JavaScript to be able to view tasks and delete them if necessary.
+               </p>
+
+               <p>
+                 <b>What am I going to do next?</b>
+                 <br>
+                My next plan is to create a comment section with a notification (such as an alarm) to serve as a reminder
+               </p>
+
+               <p>
+                 <b>What are my blockers?</b>
+                 <br>
+                 The most challenge I had this week was dealing with JavaScript. This programming language has been my weakness for years but I 
+                am loving it now.</p>
+             </div>
+
+             <button class="accordion">Exercises</button>
+             <div class="panel">
+               <p>
+                 <a href="exercises/todo.html">Todo Application 2</a>
+               </p>
+             </div>
+
+             <button class="accordion">Questions</button>
+             <div class="panel">
+
+               <ul>
+                 <li>
+                   None
+                 </li>
+
+               </ul>
+
+             </div>
+
+           </div>
+
+         </div>
+
+       </div>
+
+       <div class="copyright">
+         <p>©<script>
+             document.write(new Date().getFullYear());
+           </script>
+           Fabrice T. Banyingela. All Rights Reserved. |
+           <a href="../../portfolio.html" style="color: white; text-decoration: none;">My Portfolio</a></p>
+       </div>
+
+       <!-- Link to the course links-->
+       <script>
+         var acc = document.getElementsByClassName("accordion");
+         var i;
+
+         for (i = 0; i < acc.length; i++) {
+           acc[i].addEventListener("click", function () {
+             this.classList.toggle("active");
+             var panel = this.nextElementSibling;
+             if (panel.style.maxHeight) {
+               panel.style.maxHeight = null;
+             } else {
+               panel.style.maxHeight = panel.scrollHeight + "px";
+             }
+           });
+         }
+       </script>
+     </body>
+
+     </html>

@@ -1,0 +1,215 @@
+     <!DOCTYPE html>
+     <html lang="en">
+
+     <head>
+       <title>WDD330 - W04 Exercise04</title>
+       <meta charset="UTF-8">
+       <meta name="viewport" content="width=device-width, initial-scale=1">
+       <link rel="stylesheet" type="text/css" href="../../css/style.css">
+     </head>
+
+     <body onload="dynamicTableLoader()">
+
+       <div class="navbar">
+         <a href="../../index.html">Welcome</a>
+         <a href="../../portfolio.html">My Portfolio</a>
+         <a href="../../contact.html" class="right">Contact</a>
+       </div>
+
+       <div class="header">
+         <h1>WDD 330 - Web Frontend Development II</h1>
+         <h4>My Portfolio</h4>
+       </div>
+
+       <div class="row">
+
+         <div class="row">
+
+
+           <div class="main">
+             <h2>WEEK 07 - SUBMISSION</h2>
+
+             <button class="accordion">Reading notes</button>
+             <div class="panel">
+               <h3>Ch 11: Further Functions</h3>
+               <p>functions are first-class objects, which means they can be passed around in the same way as every
+                 other value.
+                 They can have their own properties and methods.</p>
+               <ul>
+
+                 <li>All functions share some built-in methods: length() and call()</li>
+                 <li>Functions can have custom properties. For example: square.properties = "This is a customer property
+                   description"</li>
+                 <li>Custom properties provide Memoization. Memoization is a useful feature that provides result caching
+                 </li>
+                 <li>An Immediately Invoked Function Expression– or IIFE – (pronounced 'iffy') is an anonymous function
+                   that, as the name suggests, is invoked as soon as it’s defined.</li>
+                 <li>IIFEs are a useful way of performing a task while keeping any variables wrapped up within the scope
+                   of the function. This means the global namespace is not polluted with lots of variable names.</li>
+                 <li>IIFEs are useful for temp variable handling and initialization code (code that is there to
+                   initialize and won't be used anywhere again)</li>
+                 <li>The recommended way of using STRICT MODE is to place it inside an IIFE, because other people may
+                   not be using STRICT MODE. This ensures that only our code is in strict mode</li>
+                 <li>IIFEs can be used to self-contain blocks of code to ensure that they don't mess with each other and
+                   for testing purposes</li>
+                 <li>JS functions can also define and rewrite themselves by calling themselves inside the function. Note
+                   that previously set properties of a function will be lost if this is done.</li>
+                 <li>A recursive function is one that invokes itself until a certain condition is met. It’s a useful
+                   tool to use when iterative processes are involved. For example a factorial function.</li>
+                 <li>A PROMISE represents the future result of an asynchronous operation.</li>
+                 <li>A promise is created using a constructor function. This takes a function called an EXECUTOR as an
+                   argument. The executor initializes the promise and starts the asynchronous operation.
+                   It also accepts two functions as arguments: the resolve() function is called if the operation is
+                   successful, and the reject() function is called if the operation fails.</li>
+                 <p>Pure Functions:A key aspect of functional programming is its use of pure functions. A pure function
+                   is a function that adheres to the following rules:</p>
+                 <ol>
+                   <li>The return value of a pure function should only depend on the values provided as arguments. It
+                     doesn't rely on values from somewhere else in the program.</li>
+                   <li>There are no side-effects. A pure function doesn't change any values or data elsewhere in the
+                     program.
+                     It only makes non-destructive data transformations and returns new values, rather than altering any
+                     of the underlying data.</li>
+                   <li>Referential transparency. Given the same arguments, a pure function will always return the same
+                     result.</li>
+                 </ol>
+                 <p>In order to follow these rules, any pure function must have:</p>
+                 <p>At least one argument; otherwise the return value must depend on something other than the arguments
+                   of the function, breaking the first rule
+                   A return value; otherwise there’s no point in the function (unless it has changed something else in
+                   the program – in which case, it’s broken the 'no side-effects' rule).</p>
+
+
+
+                 <li>HIGHER-ORDER FUNCTIONS are functions that accept another function as an argument, or return another
+                   function as a result, or both.</li>
+               </ul>
+               <h3>Ch 13: AJAX</h3>
+               <ul>
+                 <li>Ajax is a technique that allows web pages to communicate asynchronously with a server, and it
+                   dynamically updates web pages without reloading.
+                   This enables data to be sent and received in the background, as well as portions of a page to be
+                   updated in response to user events, while the rest of the program continues to run.</li>
+                 <li>Ajax allows JavaScript to request resources from a server on behalf of the client. The resources
+                   requested are usually JSON data or small fragments of text or HTML rather than a whole web page.</li>
+                 <li>An application programming interface (API) is a collection of methods that allows external access
+                   to another program or service. Many websites allow controlled access to their data via public APIs.
+                   This means that developers are able to interact with the data and create mashups of third-party
+                   services.</li>
+                 <li>FETCH API is the living standard for requesting and sending data asynchronously across a network
+                 </li>
+                 <li>The Fetch API provides a global fetch() method that only has one mandatory argument, which is the
+                   URL of the resource you wish to fetch.</li>
+                 <li>Fetch API has a response interface. Response objects have a number of properties and methods that
+                   allow us to process the response effectively. Some properties are .headers, .url, .redirected, .type
+                 </li>
+                 <li>Redirect() method can be used to redirect to another URL in the response interface. Note: no
+                   browser supports this currently</li>
+                 <li>The text() method takes a stream of text from the response, reads it to completion and then returns
+                   a promise that resolves to a USVSting object that can be treated as a string in JavaScript.</li>
+                 <li>The blob() method is used to read a file of raw data, such as an image or a spreadsheet. Once it
+                   has read the whole file, it returns a promise that resolves with a blob object.</li>
+                 <li>JSON is probably the most common format for AJAX responses. The json() method is used to deal with
+                   these by transforming a stream of JSON data into a promise that resolves to a JavaScript object.</li>
+                 <li>We can also create our own response objects . "const response = new Response(...). These can be
+                   useful to use if you are creating an API that needs to send a response, or if you need to send a
+                   dummy response for testing purposes.</li>
+                 <li>FETCH API also has a Request interface. We can get more fine-grained control over the request being
+                   made by providing a Request object as an argument. </li>
+                 <li>Request objects are created using the Request() constructor, and include the following properties:
+                   url, method, headers, mode, cache, credentials, redirect</li>
+                 <li>FETCH API has a Headers Interface. HTTP headers are used to pass on any additional information
+                   about a request or response. Typical information contained in headers includes the file-type of the
+                   resource,
+                   cookie information, authentication information and when the resource was last modified.The Fetch API
+                   introduced a Headers interface, which can be used to create a Headers object, which can then be added
+                   as a property of Request and Response objects.</li>
+                 <li>A new Headers instance is created using a constructor function: "const headers = new Headers();"
+                 </li>
+                 <li>Header's object has the following properties and methods: has(), get(), set(), append(), delete(),
+                   and so forth.</li>
+                 <li>FETCH API also has a FormData interface which makes it easier to submit information in forms using
+                   Ajax</li>
+                 <li>A FormData instance is created using a constructor function: "const data = new FormData();"</li>
+                 <li>NOTE: the Fetch API is still in development but current versions are supported in most major
+                   browsers. jQuery is an alternative, because it has a built-in method called ajax() that functions
+                   similar to the Fetch API.</li>
+               </ul>
+
+             </div>
+
+             <button class="accordion">Weekly Report</button>
+
+             <div class="panel">
+               <p>
+                 <b>What did I do since the last meeting?</b>
+                 <br>
+                This week refreshed my knowledge on AJAX received while doing Web Engineering.
+                Few practices and I was ready to go with the exercise. 
+               </p>
+
+               <p>
+                 <b>What am I going to do next?</b>
+                 <br>
+                 I would like to build a weather center using the AJAX method
+               </p>
+
+               <p>
+                 <b>What are my blockers?</b>
+                 <br>
+                 I had difficulty using the Slack application in order to discuss on time but in the end, I managed to get in touch.</p>
+             </div>
+
+             <button class="accordion">Exercises</button>
+             <div class="panel">
+               <p>
+                 <a href="exercises/ajax.html">AJAX Application</a>
+               </p>
+             </div>
+
+             <button class="accordion">Questions</button>
+             <div class="panel">
+
+               <ul>
+                 <li>
+                  Is there any other technology equivalent to API?
+                 </li>
+
+               </ul>
+
+             </div>
+
+           </div>
+
+         </div>
+
+       </div>
+
+       <div class="copyright">
+         <p>©<script>
+             document.write(new Date().getFullYear());
+           </script>
+           Fabrice T. Banyingela. All Rights Reserved. |
+           <a href="../../portfolio.html" style="color: white; text-decoration: none;">My Portfolio</a></p>
+       </div>
+
+       <!-- Link to the course links-->
+       <script>
+         var acc = document.getElementsByClassName("accordion");
+         var i;
+
+         for (i = 0; i < acc.length; i++) {
+           acc[i].addEventListener("click", function () {
+             this.classList.toggle("active");
+             var panel = this.nextElementSibling;
+             if (panel.style.maxHeight) {
+               panel.style.maxHeight = null;
+             } else {
+               panel.style.maxHeight = panel.scrollHeight + "px";
+             }
+           });
+         }
+       </script>
+     </body>
+
+     </html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>WDD330 - Portfolio</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="../../../css/style.css">
+</head>
+
+<body>
+
+  <div class="navbar">
+    <a href="../../../index.html">Welcome</a>
+    <a href="../../../portfolio.html">My Portfolio</a>
+    <a href="../../../contact.html" class="right">Contact</a>
+  </div>
+
+  <div class="header">
+    <h1>WDD 330 - Web Frontend Development II</h1>
+    <h4>My Portfolio</h4>
+  </div>
+
+  <div class="row">
+    <div class="side">
+      <h2>BYU-Idaho Student</h2>
+      <img class="myimage" src="../../../images/background.jpg" alt="Fabrice Image One">
+
+      <h4>Fabrice Tshiyoyi Banyingela</h4>
+      <p>Bachelor of Science Applied Technology <br>BYU Idaho class of 2022</p>
+    </div>
+
+    <div class="side">
+
+      <h1>Money Transfer App</h1>
+      <div id="flex-container">
+        <div>
+          <!--Add a text input and a button. Put an empty div with an ID below those.-->
+          <section>
+            <form>
+              <h4>Registration Form</h4>
+              <!-- Input from User -->
+              <input type="text" placeholder='Enter Full Name' id="name"><br>
+              <input type="text" placeholder='Enter Physical Address' id="address"><br>
+              <input id='btn' type="submit" placeholder='Register' onclick="register(event)">
+            </form>
+
+
+            <script>
+
+            </script>
+          </section>
+        </div>
+
+
+      </div>
+    </div>
+
+    <div class="side" style="border: 4px dotted black; margin: 4px;">
+      <section>
+        <h2>Printed Statement</h2>
+        <div id="show" style="color: red; font-weight: 700; "></div>
+        <!-- Output Form Details -->
+        <p><span id="display_name"></span></p>
+        <p><span id="display_address"></span></p>
+      </section>
+
+    </div>
+
+    <script src="script.js"></script>
+
+    <script>
+
+    </script>
+
+  </div>
+
+  <div class="copyright">
+    <p>©<script>
+        document.write(new Date().getFullYear());
+      </script>
+      Fabrice T. Banyingela. All Rights Reserved. |
+      <a href="../../../portfolio.html" style="color: white; text-decoration: none;">My Portfolio</a></p>
+  </div>
+
+</body>
+
+</html>

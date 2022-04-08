@@ -1,0 +1,72 @@
+/* Exercise 1 */
+
+.heart {
+    width: 96px;
+    box-sizing: content-box;
+    height: 48px;
+    background: #eee;
+    border-color: red;
+    border-style: solid;
+    border-width: 2px 2px 50px 2px;
+    border-radius: 100%;
+    position: relative;
+    transform: rotate(90deg);
+    }
+
+.heart:before{
+content: "";
+position: absolute;
+top: 50%;
+left: 0;
+background: #eee;
+border: 18px solid red;
+border-radius: 100%;
+width: 12px;
+height: 12px;
+box-sizing: content-box;
+}
+
+    .heart:after 
+{
+content: "";
+position: absolute;
+top: 50%;
+left: 50%;
+background: red;
+border: 18px solid #eee;
+border-radius: 100%;
+width: 12px;
+height: 12px;
+box-sizing: content-box;
+}
+ 
+/* Exercise 2 */
+
+.card {
+    width: 15vw;
+    height: 21vw;
+    border: 1px solid red;
+    border-radius: 40px;
+    margin: 20px;
+    box-shadow: 2px 2px 4px red;
+  }
+  
+  .pathone{
+    fill: none;
+    stroke: #1a6e24;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-width: 14;
+  }
+  
+  .pathone{
+    stroke: #1a6e24;
+  }
+  
+  .pathtwo{
+    stroke: red;
+  }
+  
+  .paththree{
+    stroke: #1a6e24;
+  }

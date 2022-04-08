@@ -1,0 +1,138 @@
+.todo {
+  padding: 50px;
+  text-align: center; 
+  color: rgb(15, 15, 15);
+  border: 1px solid #e2185f;
+} 
+
+.addBtn {
+  width: 100%;
+  display: flex;
+  margin: 0;
+  padding: 0; 
+  height: 3em;
+  border: none;
+  border-radius: 0;
+  font-size: 1em;
+  background-color: #1abc9c;
+  color: #555;
+  text-align: center;
+  cursor: pointer;
+  transition: 0.3s;
+  justify-content: center;
+  align-items: center;
+ }
+ 
+ .btn {
+  display: inline-flex;
+  border: none;
+  padding: 0;
+  margin: 0;
+  outline: none;
+  height: 3em;
+  width: 8em;
+  font: 1em;
+  transition: 0.3s;
+  justify-content: center;
+  align-items: center;
+  background-color: #f1f1f1;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #e2185f;
+  margin-top: 2px;
+}
+
+.btn.active {
+  background-color: #1abc9c;
+  color: white;
+  border: 1px solid;
+}
+
+button{
+  text-decoration: none;
+  border: none;
+  margin: 0;
+  padding: 0;
+  height: 3em;
+  width: 6em;
+  cursor: pointer;
+}
+
+
+.done-button {
+  background-color: #1abc9c;
+  color: #fff;
+  padding: 0;
+  margin: 0;}
+
+.done-button:hover{
+  background-color: #1abc9c69;}
+
+ .todo{
+   color: black;
+ } 
+
+.delete-button {
+  color: white;
+  background-color: #e2185f;
+  padding: 0;
+  margin: 0;}
+
+.delete-button:hover {
+  background-color: #e2185f65;} 
+
+  .addBtn:hover {
+    background-color: #bbb;}
+  
+  .show {
+    display: block;
+  }
+
+.todo-container{
+  display: flex;
+  justify-content: center;
+}
+ 
+ul {
+  margin: 0;
+  padding: 0;
+  width: 100%;}
+ 
+.all{
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+  margin: 1vh 0;
+  padding: 0;
+  height: auto;
+  list-style-type: none;
+  background: #eee;
+  font-size: 1em;
+  transition: 0.2s;
+  align-items: center;
+}
+
+.all:nth-child(odd) {
+  background: #f9f9f9;}
+
+.all:hover {
+  background: #ddd;}
+ 
+.crossed{
+  text-decoration: line-through;
+  color: white;}
+
+.done{
+  background-color: #2F2F2F;}
+
+.done:nth-child(odd) {
+  background: #2F2F2F;}
+
+.invisible{
+  display: none;
+}
+.visible{
+  display: initial;
+}

@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>WDD330 - W04 Exercise04</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="../../css/style.css">
+</head>
+
+<body onload="dynamicTableLoader()">
+
+  <div class="navbar">
+    <a href="../../index.html">Welcome</a>
+    <a href="../../portfolio.html">My Portfolio</a>
+    <a href="../../contact.html" class="right">Contact</a>
+  </div>
+
+  <div class="header">
+    <h1>WDD 330 - Web Frontend Development II</h1>
+    <h4>My Portfolio</h4>
+  </div>
+
+  <div class="row">
+
+    <div class="row">
+
+
+      <div class="main">
+        <h2>WEEK 04 - SUBMISSION</h2>
+
+        <button class="accordion">Reading notes</button>
+        <div class="panel">
+
+          <h3>Chapter 8: Forms</h3>
+          <p>Summary</p>
+
+          <ul>
+            <li>Buttons trigger events in our web pages. Carefully selecting the correct use of them such as the reset
+              (clear) button that is not advisable since they can wipe out all the data that was entered.</li>
+            <li>Within your HTML tags, attributes such as: </li>
+
+            <ul>
+              <li><strong>Hidden:</strong> used in the text field tags and will hide the entire field when the page is
+                displayed by the browser. Usually, this technique is used to provide a value or some settings that are
+                already available. Since these types of info are in no way secret, they shouldn’t be used for sensitive
+                data.</li>
+              <li><strong>Password:</strong> is used to convert a word, number, or characters into character * thus
+                hiding the typed information</li>
+              <li><strong>Number:</strong> will force the keyboard to only accept numbers except for the letter e or E
+                for exponential</li>
+            </ul>
+            <li>To avoid saving inconsistent or empty data to the database, a developer must apply the techniques of
+              validation. For example, when a field is left empty or inconsistent is typed, the browser must respond to
+              the user to attend to the compulsory field before saving data. In some cases, the submit button must be
+              disabled until all fields are correctly completed.</li>
+
+          </ul>
+
+          <h3>Chapter 12: Object-Oriented Programming (OOP) in JavaScript</h3>
+          <p>OOP has three main concepts in OOP: Encapsulation, Polymorphism, and Inheritance.</p>
+          <ul>
+            <li><strong>Encapsulation</strong> In this method, the end-user (usually without programming knowledge) can
+              only see the essential functionalities such as the fields and buttons; but the programming logic is all
+              written inside an object.</li>
+            <li><strong>Polymorphism:</strong> allow programmers to use the same process/method for different objects.
+              This method also allows the object to override share methods.</li>
+            <li><strong>Inheritance:</strong>Inheritance: This process allows an object to use another object’s features
+              by inheriting all its properties and methods and adding some new features if possible (using the prototype
+              property of that object’s class).</li>
+          </ul>
+
+          <h3>Chapter 15: Modern JavaScript Development</h3>
+          <ul>
+            <li>Library such as jQuery, Underscore & Lodash is used to complete common tasks without having to use lots
+              of repetitive code. The most advantage of using a library is that it will be used by lots of people and
+              thoroughly tested while its main disadvantage is the application tends to slow down.</li>
+            <li><strong>MVC Frameworks:</strong> Model-View-Controller (MVC) is a programming design used by server-side
+              frameworks such as Ruby On Rails and Django. Recently, it has been used in JavaScript to organize
+              large-scale web applications.</li>
+            <li><strong>Models:</strong> Models are ways for implementing the CRUD operations (creating, reading,
+              updating, and deleting). For example, dynamic navigation will request that all views (pages) access the
+              database items from a single controller so that when the database is manipulated, the navigation bar reads
+              the data accordingly.</li>
+            <li><strong>Views:</strong> Throughout the browser, views provide a visual representation of the model
+              showing all the relevant information and also provide a way for users to interact with an application,
+              usually via forms</li>
+            <li><strong>Controllers:</strong> are create links between models and views together by communicating
+              between them. They respond to events, which are usually inputs from a user (entering some data into a
+              form, for example), process the information, then update the model and view accordingly.</li>
+          </ul>
+
+        </div>
+
+        <button class="accordion">Weekly Report</button>
+
+        <div class="panel">
+          <p>
+            <b>What did I do since the last meeting?</b>
+            <br>
+            Read, read, and read again! These readings were very crucial a professional way to splitting files and link
+            them across a web development project.
+          </p>
+
+          <p>
+            <b>What am I going to do next?</b>
+            <br>
+            My plan is to apply the MVC framework method by creating models, views, and controllers for my website.
+            This way, I will be able to practice deeply what I have learned.
+          </p>
+
+          <p>
+            <b>What are my blockers?</b>
+            <br>
+            Taking five courses in one semester is not easy but it is manageable. Without a schedule, I was running up
+            and
+            down without prioritizing my weekly tasks and also fall behind with my assignments
+            but thanks to a colleague’s good counsel, I managed to fix my timetable.
+          </p>
+        </div>
+
+        <button class="accordion">Exercises</button>
+        <div class="panel">
+          <p>
+            <a href="exercises/search.html">Search</a>
+          </p>
+        </div>
+
+        <button class="accordion">Questions</button>
+        <div class="panel">
+
+          <ul>
+            <li>Does modularization works better with PHP or HTML?</li>
+          </ul>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <div class="copyright">
+    <p>©<script>
+        document.write(new Date().getFullYear());
+      </script>
+      Fabrice T. Banyingela. All Rights Reserved. |
+      <a href="../../portfolio.html" style="color: white; text-decoration: none;">My Portfolio</a></p>
+  </div>
+
+  <!-- Link to the course links-->
+  <script>
+    var acc = document.getElementsByClassName("accordion");
+    var i;
+
+    for (i = 0; i < acc.length; i++) {
+      acc[i].addEventListener("click", function () {
+        this.classList.toggle("active");
+        var panel = this.nextElementSibling;
+        if (panel.style.maxHeight) {
+          panel.style.maxHeight = null;
+        } else {
+          panel.style.maxHeight = panel.scrollHeight + "px";
+        }
+      });
+    }
+  </script>
+</body>
+
+</html>

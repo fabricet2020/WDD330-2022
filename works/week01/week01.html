@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>WDD330 - W01 Exercise01</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="../../css/style.css">
+</head>
+
+<body onload="dynamicTableLoader()">
+
+  <div class="navbar">
+    <a href="../../index.html">Welcome</a>
+    <a href="../../portfolio.html">My Portfolio</a>
+    <a href="../../contact.html" class="right">Contact</a>
+  </div>
+
+  <div class="header">
+    <h1>WDD 330 - Web Frontend Development II</h1>
+    <h4>My Portfolio</h4>
+  </div>
+
+  <div class="row">
+
+    <div class="row">
+ 
+
+      <div class="main">
+        <h2>WEEK 01 - SUBMISSION</h2>
+ 
+        <button class="accordion">Reading notes</button>
+        <div class="panel">
+          <p>
+            As a starting week, it was very interesting to recap what I have learned in previous Web courses; from HTML, CSS, and JavaScript. These exercises made me learn some of the things that I have been struggling with previously. I have conducted a lot of research on specific topics in order to build my portfolio's website - I feel like the website that I have developed is not what I want at the moment but with time, I will be able to add some changes. I guess this semester will be very interesting and fun with less stress. 
+          </p>
+
+          <p>
+            Learning Local Storage was very interesting. This technique allows users to save data to local storage using multiple keys. The method requires the use of Array when dealing with a long list of values that convert this Array into String and when retrieving it, the code will convert it back from String to Array which invited me to learn JSON as well.
+          </p>
+
+          
+            <ul>
+              <li>LocalStorage uses key-value pairs to store data in the browser (not to the server)</li>
+              <li>Think of an old fashioned phone book as an example </li> 
+              <li>The storage limit is 5MB</li>
+            </ul>            
+           
+        </div>
+
+        <button class="accordion">Weekly Report</button>
+
+        <div class="panel">
+          <p>
+            <b>What did I do since the last meeting?</b>
+            <br> 
+            This week was a recap of what I have done previously in my IT courses. The catching up was very 
+            important in order to build a presentable portfolio website for myself. I’ve watched several videos 
+            and gone through many links on the StackOverflow website to solving some challenges I had such as 
+            using Accordion and Media Queries.
+          </p> 
+
+          <p> 
+            <b>What am I going to do next?</b>   
+            <br> 
+            As far as I need to develop a beautiful design, I plan on adding some flexbox to work dynamically 
+            with JavaScript to create a more presentable navigator and have images fit the entire page’s width 
+            on mobile devices. I have also created a subdomain (from my company's main domain) and would like to 
+            have all my school works published there.
+          </p> 
+
+          <p> 
+            <b>What are my blockers?</b>
+            <br>
+            My first blogger of the week was GitHub! I do have an account from my previous class but got lost 
+            completely on how to push and pull using commands. Thanks to the GitHub Desktop that made my work easy. 
+            The other stress I had was that the course started while I was still on holiday with my family. 
+            So I had constantly sneak out of their presence to do some readings. Now that we are back to normal, 
+            I hope with a good team we will have a smooth class.
+          </p>
+
+        </div>
+
+        <button class="accordion">Exercises</button>
+        <div class="panel">
+          <p>
+            <a href="exercise01.html">Local Storage</a> 
+          </p>
+        </div>
+  
+        <button class="accordion">Questions</button>
+        <div class="panel">
+           
+            <ul>              
+              <li>Can hackers make use of LocalStorage to hurts end users?</li>
+            </ul>
+          
+        </div>
+
+      </div>
+ 
+    </div>
+
+  </div>
+
+  <div class="copyright">
+    <p>©<script>
+        document.write(new Date().getFullYear());
+      </script>
+      Fabrice T. Banyingela. All Rights Reserved. |
+      <a href="../../portfolio.html" style="color: white; text-decoration: none;">My Portfolio</a></p>
+  </div>
+
+  <!-- Link to the course links-->
+  <script>
+    var acc = document.getElementsByClassName("accordion");
+    var i;
+
+    for (i = 0; i < acc.length; i++) {
+      acc[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var panel = this.nextElementSibling;
+        if (panel.style.maxHeight) {
+          panel.style.maxHeight = null;
+        } else {
+          panel.style.maxHeight = panel.scrollHeight + "px";
+        } 
+      });
+    }
+    </script>
+</body>
+
+</html>

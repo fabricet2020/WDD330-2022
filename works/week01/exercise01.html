@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>WDD330 - Portfolio</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="../../css/style.css">
+</head>
+
+<body>
+
+  <div class="navbar">
+    <a href="../../index.html">Welcome</a>
+    <a href="../../portfolio.html">My Portfolio</a>
+    <a href="../../contact.html" class="right">Contact</a>
+  </div>
+
+  <div class="header">
+    <h1>WDD 330 - Web Frontend Development II</h1>
+    <h4>My Portfolio</h4>
+  </div>
+
+  <div class="row">
+    <div class="side">
+      <h2>BYU-Idaho Student</h2>
+      <img class="myimage" src="../../images/background.jpg" alt="Fabrice Image One">
+
+      <h4>Fabrice Tshiyoyi Banyingela</h4>
+      <p>Bachelor of Science Applied Technology <br>BYU Idaho class of 2022</p>
+    </div>
+
+    <div class="side">
+
+      <h1>Form (Local Storage)</h1>
+      <div id="flex-container">
+        <div>
+          Story Name:<input id="name_input" type="text"></input>
+          <label for="storyEntry">Story content:</label><br />
+          <textarea id="story_editor" placeholder="Write a totally awesome story here." cols="60" rows="5"></textarea>
+
+          <section>
+            <button class="buttonEx" onclick="loadStory()">Find and Edit It</button>
+            <button class="buttonEx" onclick="saveStory()">Save It</button>
+            <button class="buttonEx" onclick="displayStory()">Display It</button>
+          </section>
+        </div>
+
+
+      </div>
+    </div>
+
+    <div class="side">
+
+      <div>
+        <h1>Output</h1>
+        <h3>Data locally saved (Cookies)</h3>
+        <ol id="storyList">
+        </ol>
+
+        <h3>Just display data</h3>
+        <section id="story_display"></section>
+      </div>
+
+    </div>
+
+
+      <script src="exercise01.js"></script>
+
+      <script>
+
+      </script>
+     
+  </div>
+
+  <div class="copyright">
+    <p>©<script>
+        document.write(new Date().getFullYear());
+      </script>
+      Fabrice T. Banyingela. All Rights Reserved. |
+      <a href="../../portfolio.html" style="color: white; text-decoration: none;">My Portfolio</a></p>
+  </div>
+
+</body>
+
+</html>

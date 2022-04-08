@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>WDD330 - W03 Exercise03</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="../../css/style.css">
+</head>
+
+<body onload="dynamicTableLoader()">
+
+  <div class="navbar">
+    <a href="../../index.html">Welcome</a>
+    <a href="../../portfolio.html">My Portfolio</a>
+    <a href="../../contact.html" class="right">Contact</a>
+  </div>
+
+  <div class="header">
+    <h1>WDD 330 - Web Frontend Development II</h1>
+    <h4>My Portfolio</h4>
+  </div>
+
+  <div class="row">
+
+    <div class="row">
+
+
+      <div class="main">
+        <h2>WEEK 09 - SUBMISSION</h2>
+
+        <button class="accordion">Reading notes</button>
+        <div class="panel">
+
+          <h3>Ch 9: The Window Object</h3>
+
+          <ul>
+            <li>Window Object: In a browser environment the global object is the window object, which represents the browser window that contains a web page.</li>
+            <li>Browser Object Model: a collection of properties and methods that contain information about the browser and computer screen.</li>
+            <li>To access the BOM, we use the window object to access the properties and methods</li>
+            <li>Global variables are properties of the global object. They are created without the use of const, let, or var.</li>
+            <li>The window object has some dialog methods: window.alert(), window.confirm(), window.prompt()</li>
+            <li>Document object: the window object contains a document object. This object has properties and methods that deal with the page that has been loaded into the window.</li>
+            <li>Document.write(): Writes a string of text to the page. It will replace whatever html was there.</li>
+            <li>Cookies: Cookies are used to store data about the user for the site. Cookies take the form of a text file that contain a list of name/value pairs separated by semicolons.</li>      
+          </ul>
+
+          <h3>Ch 14: HTML5 APIs</h3>
+          <ul>
+            <li>HTML5 Web Storage: The Web Storage API provides a key-value store on the client’s computer that is
+              similar to using cookies but has fewer restrictions, more storage capacity, and is
+              generally easier to use. This makes it perfect for storing information about users,
+              as well as storing application-specific information that can then be used during
+              future sessions.</li>
+            <li>If Web storage is not supported by the browser then the window object has the "localStorage" property</li>
+            <li>There is also sessionStorage, which works the same as a php session</li>
+            <li>Every time a value is saved to localStorage, a storage event is fired.</li>
+            <li>We can use JSON.stringify() to store any JS object in local storage</li>
+            <li>Geolocation API: used to obtain the geographical position of the device.
+              This means it can be used to find the user’s exact location, then link to nearby
+              places or measure the speed at which the user is moving. This information can
+              then be used to filter data based on the user’s location or speed and direction of
+              travel. An example of this might be a search function that returns results based on
+              your location. Because of privacy concerns, permission to use this has to be
+              granted by the user first.</li>
+            <li>To use this API, we use the navigator object in combination with the getCurrentPosition() method</li>
+            <li>For example: "navigator.geolocation.getCurrentPosition(youAreHere);"</li>
+            <li>youAreHere is a position object with a coords property with a latitude and longitude</li>
+          </ul>
+
+ <!--          <h3>Web Storage API Crucial Differences</h3>
+          <ul>
+            <li>Information stored is not shared with the server on every request.</li>
+            <li>Information is available in multiple windows of the browser (but only if the
+              domain is the same).</li>
+            <li>Storage capacity limit is much larger than the 4KB limit for cookies</li>
+            <li>Any data stored does not automatically expire as it does with cookies. This
+              potentially makes cookies a better choice for something like showing a popup
+              once a day.</li>
+            <li>Web Workers:Web workers allow processes to be run
+              in the background, adding support for concurrency in JavaScript. The idea is that
+              any processes that could take a long time are carried out in the background, so a
+              website will continue to function without fear of the dreaded “script has become
+              unresponsive” message that occurs when a script runs for too long,</li>
+            <li>To use, use the Worker() constructor function to create a new worker. (const worker = new Worker('task.js');)</li>
+            <li>Websockets:Websocket is a new protocol that allows two-way communication with a server –
+              also known as push messaging. This means that a connection is kept open and
+              responses are ‘pushed’ to the client as soon as they are received.</li>
+            <li>Notifications API: The Notification API allows you to show messages using the system’s
+              notifications. This is usually a popup in the corner of the screen, but it changes
+              depending on the operating system. An advantage of using the system notification
+              is that they will still be displayed even if the web page that calls them isn’t the
+              current tab.</li>
+            </ul> -->
+        </div>
+
+        <button class="accordion">Weekly Report</button>
+
+        <div class="panel">
+          <p>
+            <b>What did I do since the last meeting?</b>
+            <br>
+            Catching up on my classwork. I have done a lot of reading as well on APIs.
+          </p>
+
+          <p>
+            <b>What am I going to do next?</b>
+            <br>
+            Create a plan for my final project. Considering all the modules that will form part of my Web project. 
+            And then create a clear milestone.
+          </p>
+
+          <p>
+            <b>What are my blockers?</b>
+            <br>
+            Understanding APIs was a little bit hard since my previous Web Fundamentals course proved to be 
+            difficult. My team is also lacking in meeting effectively besides texting each other.
+          </p>
+
+        </div>
+
+        <button class="accordion">Exercises</button>
+        <div class="panel">
+          <p>
+          <a href="#">Window Object: Change Colors</a>
+          <br>
+          <iframe src="../week09/exercises/factors.html" frameborder="0"></iframe>
+        </p>
+
+        <p>
+          <a href="#">API</a>
+          <br>
+          <iframe src="../week09/weather/index.html" width ="100%" height = "515" frameborder="120"></iframe>
+        </p>
+        </div>  
+
+        <button class="accordion">Questions</button>
+        <div class="panel">
+          <ol>
+            <li>Are APIs techniques used for tracking devices?</li> 
+          </ol>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <div class="copyright">
+    <p>©<script>
+        document.write(new Date().getFullYear());
+      </script>
+      Fabrice T. Banyingela. All Rights Reserved. |
+      <a href="../../portfolio.html" style="color: white; text-decoration: none;">My Portfolio</a></p>
+  </div>
+
+  <!-- Link to the course links-->
+  <script>
+    var acc = document.getElementsByClassName("accordion");
+    var i;
+
+    for (i = 0; i < acc.length; i++) {
+      acc[i].addEventListener("click", function () {
+        this.classList.toggle("active");
+        var panel = this.nextElementSibling;
+        if (panel.style.maxHeight) {
+          panel.style.maxHeight = null;
+        } else {
+          panel.style.maxHeight = panel.scrollHeight + "px";
+        }
+      });
+    }
+  </script>
+</body>
+
+</html>

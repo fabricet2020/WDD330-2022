@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>WDD330 - W04 Exercise04</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="../../css/style.css">
+</head>
+
+<body onload="dynamicTableLoader()">
+
+  <div class="navbar">
+    <a href="../../index.html">Welcome</a>
+    <a href="../../portfolio.html">My Portfolio</a>
+    <a href="../../contact.html" class="right">Contact</a>
+  </div>
+
+  <div class="header">
+    <h1>WDD 330 - Web Frontend Development II</h1>
+    <h4>My Portfolio</h4>
+  </div>
+
+  <div class="row">
+
+    <div class="row">
+
+
+      <div class="main">
+        <h2>WEEK 05 - SUBMISSION</h2>
+
+        <button class="accordion">Reading notes</button>
+        <div class="panel">
+
+          <h3>Chapter 10: Testing and Debugging</h3>
+          <p>Summary</p>
+          <p>Errors are caused when something goes wrong in a program. They are usually caused by one of the following:
+          </p>
+
+          <ul>
+            <li>System error ― there’s a problem with the system or external devices with which the program is
+              interacting.</li>
+            <li>Programmer error ― the program contains incorrect syntax or faulty logic; it could even be as simple as
+              a typo.</li>
+            <li>User error ― the user has entered data incorrectly, which the program is unable to handle.</li>
+          </ul>
+
+          <p>Exceptions</p>
+          <ul>
+            <li>An exception is an error that produces a return value that can then be used by the program to deal with
+              the error. </li>
+          </ul>
+          <p>Stack Traces</p>
+          <ul>
+            <li>This is a sequence of functions or method calls that lead to the point where the error occurred. </li>
+          </ul>
+
+          <p>Warnings</p>
+          <ul>
+            <li>A warning can occur if there’s an error in the code that isn't enough to cause the program to crash.
+            </li>
+            <li>Note that not all browsers will display a warning for the code</li>
+            <li>When a runtime error occurs in the browser, the HTML will still appear, but the JavaScript code will
+              stop working in the background</li>
+          </ul>
+
+          <ul>
+
+            <li>Strict mode is the norm for programming. To use, include this in the first line: 'use strict'; </li>
+            <li>Linting Tools such as JS Lint, JS Hint, ES Lint help with coding convention</li>
+            <li>Feature Detection: Feature detection guarantees that the method is only
+              called if it actually exists and fails gracefully, without any exceptions being
+              thrown, if the method doesn’t exist.</li>
+            <li>Feature Detection can also detect browser support.</li>
+            <li>Alert() can be used for debugging with breakpoints</li>
+            <li>"debugger" command is useful! Learn to use it better.</li>
+            <li>Error Objects: We can create objects to show different types of errors.</li>
+            <li>Types of Error Objects: Error(), EvalError(), RangeError(), ReferenceError(), SyntaxError(),
+              TypeError(),
+              URIError(), InternalError()</li>
+            <li>Throwing Exceptions: Use "throw" to highlight problems in code. It will top the execution.</li>
+            <li>The best practice is to throw an error object. "throw new Error('...')</li>
+            <li>Try, catch, AND finally: Used to catch any errors but not halt the program. It will let us know in
+              the background what the exceptions are.
+            </li>
+          </ul>
+          <p>Red-Green-Refactor:</p>
+          <ol>
+            <li>Write tests (that initially fail)</li>
+            <li>Write code to pass the tests</li>
+            <li>Refactor the code</li>
+            <li>Test refactored code</li>
+            <li>Write more tests for new features</li>
+            <br>
+          </ol>
+
+          <li>Testing Frameworks: They provide methods that make creating tests easier.</li>
+          <li>Jest is a testing framework developed by Facebook tp do such things.</li>
+
+
+        </div>
+
+        <button class="accordion">Weekly Report</button>
+
+        <div class="panel">
+          <p>
+            <b>What did I do since the last meeting?</b>
+            <br>
+            This past week I started with the design of my Todo Application using the local storage method. Although I
+            do feel like I can finish it this week, I still need some reading to understand perfectly the topic.
+          </p>
+
+          <p>
+            <b>What am I going to do next?</b>
+            <br>
+            My next move is to finalize the Todo list assignment that responds to the specifications; to insert task,
+            view, and delete.
+          </p>
+
+          <p>
+            <b>What are my blockers?</b>
+            <br>
+            My blocker this week was my job's project that required me to travel to areas weak with an internet
+            connection. but luckily I had done some readings and tasks way before I traveled. </p>
+        </div>
+
+        <button class="accordion">Exercises</button>
+        <div class="panel">
+          <p>
+            <a href="exercises/todo.html">Todo Application 1</a>
+          </p>
+        </div>
+
+        <button class="accordion">Questions</button>
+        <div class="panel">
+
+          <ul>
+            <li>
+              None
+            </li>
+
+          </ul>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <div class="copyright">
+    <p>©<script>
+        document.write(new Date().getFullYear());
+      </script>
+      Fabrice T. Banyingela. All Rights Reserved. |
+      <a href="../../portfolio.html" style="color: white; text-decoration: none;">My Portfolio</a></p>
+  </div>
+
+  <!-- Link to the course links-->
+  <script>
+    var acc = document.getElementsByClassName("accordion");
+    var i;
+
+    for (i = 0; i < acc.length; i++) {
+      acc[i].addEventListener("click", function () {
+        this.classList.toggle("active");
+        var panel = this.nextElementSibling;
+        if (panel.style.maxHeight) {
+          panel.style.maxHeight = null;
+        } else {
+          panel.style.maxHeight = panel.scrollHeight + "px";
+        }
+      });
+    }
+  </script>
+</body>
+
+</html>

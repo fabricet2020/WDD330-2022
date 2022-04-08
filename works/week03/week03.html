@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>WDD330 - W03 Exercise03</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="../../css/style.css">
+</head>
+
+<body onload="dynamicTableLoader()">
+
+  <div class="navbar">
+    <a href="../../index.html">Welcome</a>
+    <a href="../../portfolio.html">My Portfolio</a>
+    <a href="../../contact.html" class="right">Contact</a>
+  </div>
+
+  <div class="header">
+    <h1>WDD 330 - Web Frontend Development II</h1>
+    <h4>My Portfolio</h4>
+  </div>
+
+  <div class="row">
+
+    <div class="row">
+
+
+      <div class="main">
+        <h2>WEEK 03 - SUBMISSION</h2>
+
+        <button class="accordion">Reading notes</button>
+        <div class="panel">
+
+          <h3>Object methods, "this"</h3>
+          <p>this is a keyword whose value changes depending on how a function gets called.
+            There six different ways where this can take on new values: in global context
+            in object construction, in an object method, in a simple function, in an arrow function,
+            in an event listener </p>
+          <p>Summary</p>
+
+          <ul>
+            <li>Example: user.sayHi(). So, here we’ve got a method sayHi of the object user.</li>
+            <li>Object-Oriented Programming is the act of writing our code using objects to represent entities</li>
+            <li>If you need this to reference the object in an event listener, you need to use bind to manually create a
+              this context.
+              bind is a method that is present in every function. It allows you to change the this context.
+            </li>
+
+          </ul>
+
+          <h3>Chapter 5: Objects</h3>
+          <p>An object is a self-contained set of related values and functions and
+            act as a collection of named properties that map to any JS value (strings, numbers, booleans, arrays and
+            functions).
+            If a property’s value is a function, it is known as a method.</p>
+          <ul>
+            <li>To create an object literal, simply enter a pair of curly braces. Eg. const spiderman = {};</li>
+            <li>To call an object’s method we can also use dot or bracket notation.</li>
+            <li>A constructor function is used to create a new date object using the new operator:
+              const today = new Date();</li>
+            <li>JSON is often used to exchange information between web services, and is employed by sites such as
+              Twitter, Facebook and Trello to share information</li>
+            <li>The Math object is a built-in object that has several properties representing mathematical constants.
+            </li>
+            <li>A constructor function is used to create a new date object using the new operator.</li>
+            <li>In a regular expression, there are a number of characters that have a special meaning, commonly known as
+              metacharacters</li>
+          </ul>
+
+          <h3>Chapter 6: Document Object Model</h3>
+          <p>The Document Object Model (DOM) allows you to access elements of a web page and enable interaction with the
+            page by adding and removing elements, changing the order, content and attributes of elements, and even
+            altering how they are styled.</p>
+          <ul>
+            <li>The getElementById() method does exactly what it says on the tin.
+              It returns a reference to the element with a unique id attribute that is given as an argument.</li>
+            <li>getElementsByClassName() will return a live node list of all elements that have the class name that is
+              supplied as an argument.</li>
+            <li>The setAttribute can change the value of an element’s attributes.</li>
+            <li>createElement() method that takes a tag name as a parameter and returns that element</li>
+            <li>The innerHTML returns all the child elements of an element as a string of HTML.</li>
+            <li>A function that is passed as an argument to another is known as a callback.</li>
+
+          </ul>
+
+          <h3>Chapter 7: Events</h3>
+          <p>Are another part of the DOM and they are what provides the link between the web page and user interactions
+          </p>
+          <ul>
+            <li>Whenever an event handler is triggered by an event, the callback function is called.
+              This function is automatically passed an event object as a parameter that contains information about the
+              event</li>
+            <li>Coordinates of an Event:
+              There are a variety of ways to find the position of where a mouse event occurs.</li>
+            <li>We have already seen the click event that occurs when a mouse button is clicked. There are also the
+              mousedown and mouseup events. These both occur before a click event is fired.</li>
+            <li>Event propagation is the order that the events fire on each element. There are two forms of event
+              propagation: bubbling and capturing.</li>
+
+          </ul>
+
+        </div>
+
+        <button class="accordion">Weekly Report</button>
+
+        <div class="panel">
+          <p>
+            <b>What did I do since the last meeting?</b>
+            <br>
+            I have updated my CSS file and so much time spent in reading. I also had the opportunity to manipulate
+            plainty of exercises online related to this week's reading.
+          </p>
+
+          <p>
+            <b>What am I going to do next?</b>
+            <br>
+            More reading to assimulate the lessons together with more exercises.   
+          </p>
+
+          <p>
+            <b>What are my blockers?</b>
+            <br>
+            I felt like getting tired and need to take a full day break using a laptop. Less sleep and my eyes are getting swollen
+            because of the hours I am spending infront of the laptop. But this will come to pass. 
+          </p>
+
+        </div>
+
+        <button class="accordion">Exercises</button>
+        <div class="panel">
+          <p>
+            <a href="ninja/index.html">Quiz Ninja</a>
+          </p>
+        </div>
+
+        <button class="accordion">Questions</button>
+        <div class="panel">
+
+          <ul>
+            <li>What is the main difference between .value vs .nodeValue?</li>
+          </ul>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <div class="copyright">
+    <p>©<script>
+        document.write(new Date().getFullYear());
+      </script>
+      Fabrice T. Banyingela. All Rights Reserved. |
+      <a href="../../portfolio.html" style="color: white; text-decoration: none;">My Portfolio</a></p>
+  </div>
+
+  <!-- Link to the course links-->
+  <script>
+    var acc = document.getElementsByClassName("accordion");
+    var i;
+
+    for (i = 0; i < acc.length; i++) {
+      acc[i].addEventListener("click", function () {
+        this.classList.toggle("active");
+        var panel = this.nextElementSibling;
+        if (panel.style.maxHeight) {
+          panel.style.maxHeight = null;
+        } else {
+          panel.style.maxHeight = panel.scrollHeight + "px";
+        }
+      });
+    }
+  </script>
+</body>
+
+</html>

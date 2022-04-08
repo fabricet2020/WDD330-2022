@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>WDD330 - W02 Exercise02</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="../../css/style.css">
+</head>
+
+<body onload="dynamicTableLoader()">
+
+  <div class="navbar">
+    <a href="../../index.html">Welcome</a>
+    <a href="../../portfolio.html">My Portfolio</a>
+    <a href="../../contact.html" class="right">Contact</a>
+  </div>
+
+  <div class="header">
+    <h1>WDD 330 - Web Frontend Development II</h1>
+    <h4>My Portfolio</h4>
+  </div>
+
+  <div class="row">
+
+    <div class="row">
+
+
+      <div class="main">
+        <h2>WEEK 02 - SUBMISSION</h2>
+
+        <button class="accordion">Reading notes</button>
+        <div class="panel">
+
+          <p>This week's reading has been very interesting. The use of Array and functions really helped me understand
+            how to store multiple values of the same data type.</p>
+          <p>I had three chapters to focus on:</p>
+
+          <h3>Chapter 2: Programming Basics</h3>
+          <p>Programming has evolved from each generation of computers. The computer programs are categorized as
+            low-level programming language that consists of machine code and assembly language. These types of
+            programming languages are somewhat difficult to manipulate thus the invention of High-level programming
+            languages such as Java, Python, JavaScript, or PHP; these programs may use natural human language.</p>
+          <p>Few details about programming:</p>
+
+          <ul>
+
+            <li>JavaScript needs only a text editor and a web browser</li>
+            <li>JavaScript was originally called Mocha, but it was changed to LiveScript, then hastily rebranded as
+              JavaScript</li>
+            <li>All programming languages have a list of Reserved Words</li>
+            <li>JavaScript has two types of comments. Single line comments starting with // and Multi-line comments
+              starting with /*and finishing with */</li>
+            <li>The syntax used by JavaScript is known as a C-style syntax because of its similarities with the C
+              programming language.</li>
+            <li>JavaScript has seven different data types. Six of them are primitive data types: String, Symbol, Number,
+              Boolean, Undefined, Null</li>
+            <li>Variables must be declared before being used. The keyword const is used when the variable is not
+              reassigned to another value, whereas let is used if the variable reassignment will take place.</li>
+            <li>A variable can either have a local scope (will only be available inside that block and not be accessible
+              outside of that block) or global scope (accessible everywhere in the program).</li>
+            <li>JS support arithmetic and logical operators</li>
+            <li>Variable values can be changed using increment or decrement operator</li>
+            <li>Type coercion happens when the operands of an operator are of different types.</li>
+            <li>The best way to change a string to a number is to use the Number method, parseInt(), or parseFloat()
+            </li>
+            <li>The preferred way of changing a number to a string is to use the String function or toString()</li>
+
+          </ul>
+
+          <h3>Chapter 3:Arrays, Logic, and Loops</h3>
+          <ul>
+
+            <li>As an ordered list of values, Array syntax can be written as follow:</li>
+            literal: const myArray = [];
+            constructor: const myArray = new Array()
+            <li>Both produce an empty array, but it’s preferable to use array literals (require less typing).</li>
+            <li>An empty array literal is called heroes</li>
+            <li>Operations available with: pop(), push(), shift(), concat(), join(), slice(), splice(), reverse(),
+              sort(),
+              indexof(), includes(),unshift(), add(), delete(), set(), has(), includes()… for example, the delete
+              operator will remove an item from an array</li>
+            <li>A Multidimensional Array is an array of arrays</li>
+            <li>Maps is a data structure as a convenient way of keeping a list of key and value pairs. They are similar
+              to 'hashes', 'hash tables' or 'dictionaries'.</li>
+
+          </ul>
+
+          <h3>Chapter 4:Functions</h3>
+          <ul>
+            <li>A function is a chunk of code and in JavaScript, they are considered to be first-class objects</li>
+            <li>Function Expression assigns an anonymous function to a variable</li>
+            <li>A function can also be declared using the constructor Function(). In this way, the body of the function
+              is entered as a string.</li>
+            <li>Parameters and arguments represent values provided for the function as an input. There is a subtle
+              difference though any parameters a function needs are set when the function is defined. When a function is
+              invoked, it is provided with arguments.</li>
+            <li>ES6 introduced a new syntax for declaring functions called the arrow These make declaring functions much
+              more succinct by using less verbose syntax.</li>
+            <li>If the function doesn't require any parameters, a pair of empty parentheses must go before the arrow.
+            </li>
+            <li>Hoisting is the JavaScript interpreter’s action of moving all variable and function declarations to the
+              top of the current scope, regardless of where they are defined. Functions that are defined using a
+              function declaration are automatically hoisted, meaning they can be invoked before they have been defined.
+            </li>
+            <li>A function that is passed as an argument to another is known as a callback.</li>
+
+          </ul>
+
+        </div>
+
+        <button class="accordion">Weekly Report</button>
+
+        <div class="panel">
+          <p>
+            <b>What did I do since the last meeting?</b>
+            <br>
+            I have tried implementing arrays and functions in my scripts to create some reasonable programming logic.
+            The reading was intense and I have decided to read again for more understanding. I have tested some CSS
+            capability using JS instead. For example function myFunction() { document.body.style.backgroundColor =
+            "red";} which will set the background color to red. Also, I have updated some of my links.
+          </p>
+
+          <p>
+            <b>What am I going to do next?</b>
+            <br>
+            I still feel like I need more reading of the function chapter and work on my web pages by updating the page
+            contents.
+          </p>
+
+          <p>
+            <b>What are my blockers?</b>
+            <br>
+            I am becoming my own problem. At some point, I feel like the website (as hosted) doesn’t look as beautiful
+            as I need and that I should redo it. But looking at the time and other courses that I have taken this
+            semester, I will rather work with it and keep on updating it a little here and there.
+          </p>
+
+        </div>
+
+        <button class="accordion">Exercises</button>
+        <div class="panel">
+          <p>
+            <a href="exercise02.html">Functions</a>
+          </p>
+        </div>
+
+        <button class="accordion">Questions</button>
+        <div class="panel">
+
+          <ul>
+            <li>In which scenario can we use callback?</li>
+          </ul>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <div class="copyright">
+    <p>©<script>
+        document.write(new Date().getFullYear());
+      </script>
+      Fabrice T. Banyingela. All Rights Reserved. |
+      <a href="../../portfolio.html" style="color: white; text-decoration: none;">My Portfolio</a></p>
+  </div>
+
+  <!-- Link to the course links-->
+  <script>
+    var acc = document.getElementsByClassName("accordion");
+    var i;
+
+    for (i = 0; i < acc.length; i++) {
+      acc[i].addEventListener("click", function () {
+        this.classList.toggle("active");
+        var panel = this.nextElementSibling;
+        if (panel.style.maxHeight) {
+          panel.style.maxHeight = null;
+        } else {
+          panel.style.maxHeight = panel.scrollHeight + "px";
+        }
+      });
+    }
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>WDD330 - Portfolio</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="css/style.css"> 
+</head>
+
+<body>
+
+	<div class="navbar">
+		<a href="index.html">Welcome</a>
+		<a href="portfolio.html">My Portfolio</a>
+		<a href="contact.html" class="right">Contact</a>
+	</div>
+
+<div class="header">
+  <h1>WDD 330 - Web Frontend Development II</h1>
+  <h4>My Portfolio</h4>
+</div>
+
+ 
+<div class="container">
+
+	<div class="row">
+	  <div class="column">
+		<img src="images/map.png" style="width:100%; border-radius: 8px;" alt="Map">
+		<h2>Contact Details</h2>
+		<p>For a quick query, get in touch using the contact details below.</p>
+		<p>For any query and request use the form.</p>
+
+		<h3>Main Office Location</h3>
+		<ul>
+			<li>
+				<div class="media-body"><b>Address: </b> Benoni, South Africa - 1501</div>
+			</li>
+			<li>
+				<div class="media-body"><b>Contact: </b> +27 76 130 1946</div>
+			</li>
+			<li>
+				<div class="media-body">
+					<b>Email: </b><a class="light-gray" href="mailto:tshiyoyi@gmail.com">tshiyoyi@gmail.com</a>  
+				</div>
+			</li>
+			<li>
+				<div class="media-body"> 
+					<b>Website: </b><a class="light-gray" href="https://www.legacybusiness.co.za">www.legacybusiness.co.za</a>
+				</div>
+			</li>			
+		</ul>
+	  </div>
+
+	  <div class="column">
+		<form action="#">
+		  <label for="fname">First Name</label>
+		  <input type="text" id="fname" name="firstname" placeholder="Your name..">
+		  <label for="lname">Last Name</label>
+		  <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+		  <label for="country">Country</label>
+		  <select id="country" name="country">
+			<option value="South Africa">South Africa</option>
+			<option value="USA">USA</option>
+			<option value="Canada">Canada</option>
+			<option value="DR Congo">DR Congo</option>
+			<option value="UK">UK</option>
+		  </select>
+		  <label for="message">Message</label>
+		  <textarea id="message" name="message" placeholder="Write your query" style="height:170px"></textarea>
+		  <input type="submit" value="Submit">
+		</form>
+	  </div>
+	</div>
+  </div>
+  
+  <div class="copyright">
+	<p>©<script>document.write(new Date().getFullYear());</script> 
+	 Fabrice T. Banyingela. All Rights Reserved. | 
+	 <a href="portfolio.html" style="color: white; text-decoration: none;" >My Portfolio</a></p>    
+ </div>
+
+</body>
+</html>

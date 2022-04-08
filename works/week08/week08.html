@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>WDD330 - W04 Exercise04</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="../../css/style.css">
+</head>
+
+<body onload="dynamicTableLoader()">
+
+  <div class="navbar">
+    <a href="../../index.html">Welcome</a>
+    <a href="../../portfolio.html">My Portfolio</a>
+    <a href="../../contact.html" class="right">Contact</a>
+  </div>
+
+  <div class="header">
+    <h1>WDD 330 - Web Frontend Development II</h1>
+    <h4>My Portfolio</h4>
+  </div>
+
+  <div class="row">
+
+    <div class="row">
+
+
+      <div class="main">
+        <h2>WEEK 08 - SUBMISSION</h2>
+
+        <button class="accordion">Reading notes</button>
+        <div class="panel">
+
+          <h3>Ch 8: CSS3 Transforms and Transitions</h3>
+          <ul>
+            <li>Transform: The CSS3 transform property allow you to translate, rotate, scale, and/or skew any element on the page.</li>
+            <li>You can move elements left, right, up, or down. Similary to the behavior of position: relative; when declaring top and left, moving elements up and down or left and right along the x and y axes. </li>
+            <li>E.g.: "transform: translate(20px, -20px);"</li>
+            <li>The scale(x,y) function scales an element by the defined factors horizontally then vertically. If only one value is provided, it will be used for both the x and y values, growing or shrinking your element or pseudo-element while maintaining the original aspect ratio.</li>
+            <li>The rotate() function rotates an element around the point of origin by a specified angle value. As with scale, by default the point of origin is the element’s center. </li>
+            <li>The skew(x,y) function specifies a skew along the x and y axes. As you’d expect, the x specifies the skew on the x axis, and the y specifies the skew on the y axis. If the second parameter is omitted, the skew will only occur on the x axis:
+              <ul>
+                <li>transform: skew(15deg, 4deg);</li>
+              </ul>
+            </li>
+            <li>transition-duration: The transition-duration property sets how long the transition will take: the duration of time it takes to go from the default state to the transitioned state. You can specify this either in seconds ( s ) or milliseconds ( ms ). </li>
+            <li>transition-timing-function: The transition-timing-function lets you control the pace of the transition in even more granular detail. Do you want your animation to start off slow and become faster, start off fast and end slower, advance at an even keel, or some other variation?</li>
+            <li>transition-delay: Finally, by using the transition-delay property, it’s possible to introduce a delay before the transition begins. Normally a transition begins immediately, so the default is 0 . Include the number of milliseconds ( ms ) or seconds ( s ) to delay the transition.</li>
+            <li>Shorthand transition: We can easily shorthand transition by including all of these just within the transition property. For example: "transition: transform 0.2s ease-out 50ms;"</li>
+            <li>Keyframes: @keyframes and @-webkit-keyframes are used to create animations (more like animation groups)</li>
+            <li>animation-name: This property is used to attach an animation (previously defined using the @keyframes syntax) to an element</li>
+            <li>animation-duration: The animation-duration property defines the length of time (in seconds or milliseconds) an animation takes to complete one iteration (all the way through, from 0% to 100%)</li>
+            <li>animation-timing-function: the animation-timing-function determines how the animation will progress over its duration.</li>
+            <li>animation-iteration-count: The animation-iteration-count property lets you define how many times the animation will play through. </li>
+            <li>animation-direction: Use this to reverse the keyframe (100% to 0%)</li>
+            <li>animation-delay: The animation-delay property is used to define how many milliseconds or seconds to wait before the browser begins the animation</li>
+            <li>Shorthand for animation: Just like with transform, we can shorthand animation all into the animation property. For example: "animation: 300ms ease-in alternate 5s backwards appearDisappear;"</li>
+          </ul>
+
+          <h3>Ch 12: Canvas, SVG, and Drag and Drop</h3>
+          <ul>
+            <li>With HTML5’s Canvas API, we can draw anything we can imagine, all through JavaScript. </li>
+            <li>The text in between the canvas tags will only be shown if the canvas element is not supported by the visitor’s browser.</li>
+            <li>300 x 150 is the default width and height</li>
+            <li>Once a canvas element is stored in a js variable, we MUST setup the context. The context is the place where your drawing is rendered.</li>
+            <li>Once the context is rendered, we must fill our brush with color. This is done with the strokeStyle or fillStyle property.</li>
+            <li>Using fillReact and strokeReact methods, we are able to draw a rectangle on the canvas.</li>
+            <li>To draw a circle, we use the beginPath(), arc(), and closePath methods.</li>
+            <li>To save a Canvas drawing, meaning to store it locally, we can use the toDataUrl method. This method creates a URL with the image in it.</li>
+            <li>SVG stands for a scalable vector graphic. Instead of pixels, each "pixel" works as a vector using vector math. It scales and doesn't go blurry.</li>
+            <li>Drag and Drop API: This API allows us to specify that certain elements are draggable, and then specify what should happen when these draggable elements are dragged over or dropped onto other elements on the page.</li>
+          </ul>
+        </div>
+
+        <button class="accordion">Weekly Report</button>
+
+        <div class="panel">
+          <p>
+            <b>What did I do since the last meeting?</b>
+            <br>
+            I tried to fix my Todo App to save the items added even after it's been done.
+          </p>
+
+          <p>
+            <b>What am I going to do next?</b>
+            <br>
+            My plan is to apply the SVG and transforms and transitions knowledge to create shapes and animates them.
+            This way, I will be able to practice deeply what I have learned.
+          </p>
+
+          <p>
+            <b>What are my blockers?</b>
+            <br>
+            This week, I did not find myself with much challenges especially that this week reminded me of my "Advanced CSS" course.
+            One challenge of almost everyday will just be time to finish different courses' activities for the same week.
+          </p>
+        </div>
+
+        <button class="accordion">Exercises</button>
+        <div class="panel">
+          <p>
+            <a href="exercises/shape.html">Shape</a>
+          </p>
+        </div>
+
+        <button class="accordion">Questions</button>
+        <div class="panel">
+          <ol>
+            <li>None</li>
+          </ol>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <div class="copyright">
+    <p>©<script>
+        document.write(new Date().getFullYear());
+      </script>
+      Fabrice T. Banyingela. All Rights Reserved. |
+      <a href="../../portfolio.html" style="color: white; text-decoration: none;">My Portfolio</a></p>
+  </div>
+
+  <!-- Link to the course links-->
+  <script>
+    var acc = document.getElementsByClassName("accordion");
+    var i;
+
+    for (i = 0; i < acc.length; i++) {
+      acc[i].addEventListener("click", function () {
+        this.classList.toggle("active");
+        var panel = this.nextElementSibling;
+        if (panel.style.maxHeight) {
+          panel.style.maxHeight = null;
+        } else {
+          panel.style.maxHeight = panel.scrollHeight + "px";
+        }
+      });
+    }
+  </script>
+</body>
+
+</html>

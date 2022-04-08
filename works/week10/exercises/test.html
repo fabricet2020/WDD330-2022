@@ -1,0 +1,66 @@
+<html>
+<head>  
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+
+    <h2>Client side inline form validation</h2>
+
+    <div class="container">
+        <form action="javascript:;" id="form1">
+            <div class="row">
+                <div class="col-25">
+                    <label for="fname">First Name</label>
+                </div>
+                <div class="col-75">
+                  
+                    <input type="text" id="fname" name="fname" maxlength="20" placeholder="Your name..">
+                    <span class="error"></span>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label for="lname">Last Name</label>
+                </div>
+                <div class="col-75">                   
+                    <input type="text" id="lname" name="lname" maxlength="20" placeholder="Your last name..">
+                   <span class="error"></span>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label for="country">Country</label>
+                </div>
+                <div class="col-75">                   
+                    <select id="country" name="country">
+                        <option value="">Select..</option>
+                        <option value="australia">Australia</option>
+                        <option value="canada">Canada</option>
+                        <option value="india">India</option>
+                        <option value="japan">Japan</option>
+                        <option value="pakistan">Pakistan</option>
+                        <option value="usa">USA</option>
+                    </select>
+                   <span class="error"></span>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label for="subject">Subject</label>
+                </div>
+                <div class="col-75">                   
+                    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+                   <span class="error"></span>
+                </div>
+            </div>
+            <div class="row">
+                <input type="submit" onclick="fnSubmitForm()" value="Submit">
+            </div>
+        </form>
+    </div>
+	
+	<script src="script.js"></script>
+	
+</body>
+</html>
